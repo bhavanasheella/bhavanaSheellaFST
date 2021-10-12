@@ -13,17 +13,17 @@ public class DriverFactory {
 		if (browserType.equalsIgnoreCase("Chrome")) {
 
 			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\002G4Q744\\Eclipse\\FST\\drivers\\chromedriver.exe");
+					"drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 
 		} else if (browserType.equalsIgnoreCase("IE")) {
 
-			System.setProperty("webdriver.ie.driver", "C:\\Users\\002G4Q744\\Eclipse\\FST\\drivers\\chromedriver.exe");
+			System.setProperty("webdriver.ie.driver", "drivers\\chromedriver.exe");
 			driver = new InternetExplorerDriver();
 
 		} else if (browserType.equalsIgnoreCase("Firefox")) {
 
-			System.setProperty("webdriver.ie.driver", "C:\\Users\\002G4Q744\\Eclipse\\FST\\drivers\\chromedriver.exe");
+			System.setProperty("webdriver.ie.driver", "drivers\\chromedriver.exe");
 			driver = new FirefoxDriver();
 
 		}
@@ -33,7 +33,7 @@ public class DriverFactory {
 
 	}
 	
-	public static void closingBrowser(){
+	public static void  closingBrowser(){
 		driver.close();
 	}
 
